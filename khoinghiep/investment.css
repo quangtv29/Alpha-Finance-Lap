@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+section{
+  position: relative;
+  width: 100%;
+  min-height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+}
+body
+{
+    background: #203aac;
+}
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444749;
+}
+
+
+header .logo{
+  position: relative;
+  color: rgb(247, 247, 247);
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+header .navigation a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 15px;
+  border-radius: 20px;
+  transition: 0.3s;
+  font-size: 20px;
+  transition-property: background;
+}
+
+header .navigation a:not(:last-child){
+  margin-right: 30px;
+}
+
+header .navigation a:hover{
+  background: rgb(230, 26, 219);
+}
+
+.content{
+  max-width: 800px;
+  margin: 200px 500px;
+}
+
+.content .info h2{
+  color: #ffffff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info h2 span{
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.content .info p{
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .info-btn{
+  color: rgb(255, 255, 255);
+  background: #143ca8;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: background;
+}
+
+.content .info-btn:hover
+    {
+        background: #db2929;
+    }
+
+
+.info a:hover
+
+label{
+  display: none;
+}
+
+#check{
+  z-index: 3;
+  display: none;
+}
+
+/* Responsive styles */
+
+
+
+/* landing footer */
+footer{
+  position: absolute;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 20px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+.khung
+{
+    background: white;
+    height: 112vh;
+    width:90%;
+    background: linear-gradient(
+        to right bottom, 
+    rgba(255,255,255,0.6),
+    rgba(255,255,255,0.3)
+    );
+    border-radius: 1rem;
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    flex-direction: column;
+}
+/* anime section styling */
+.anime
+.anime{
+    color:#fff;
+    background: #111;
+}
+.anime .title::before,
+.char .title::before{
+    background: rgb(255, 255, 255);
+}
+
+.anime .title::after
+{
+    background: rgb(231, 222, 222);
+}
+.char .title::after{
+    background: rgb(32, 20, 20);
+}
+.anime .serv-content .box
+{
+  display: flex;
+  flex-direction: column;
+}
+.anime .serv-content .card{
+    width: calc(29% - 20px);
+    text-align: center;
+    border-radius: 8px;
+    padding: 45px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.anime .serv-content .card:hover{
+    background: rgb(221, 76, 105);
+}
+.anime .serv-content .card .box{
+    transition: all 0.3s ease;
+    
+}
+.anime .serv-content .card img
+{
+  height: 300px;
+  width: 350px;
+  border-radius: 3%;
+  object-fit: cover;
+  align-content: center;
+  border: 3px solid rgb(252, 254, 255);
+  transition: all 0.1s ease;
+}
+.anime .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.anime .serv-content .card i{
+    font-size: 50px;
+    color: rgb(240, 240, 240);
+    transition: color 0.3s ease;
+}
+.anime .serv-content .card:hover i{
+    color: #fff;
+}
+.anime .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 3rem;
+    width: 100%;
+
+
+}
+.anime .serv-content
+{
+  background: rgb(245, 244, 244);
+  max-height: 40vh;
+  display: flex;
+    display: flex;
+
+}
+.anime .serv-content .card
+{
+  width: 50%;
+  display: flex;
+
+}
+
+/* anime1 section styling */
+.anime
+.anime1{
+    color:#fff;
+    background: #111;
+}
+.anime1 .title::before,
+.char .title::before{
+    background: rgb(73, 153, 190);
+}
+
+.anime1 .title::after
+{
+    background: rgb(255, 255, 255);
+}
+.char .title::after{
+    background: rgb(32, 20, 20);
+}
+.anime1 .serv-content1 .box1
+{
+  display: flex;
+  flex-direction: column;
+}
+.anime1 .serv-content1 .card1{
+    width: calc(29% - 20px);
+    text-align: center;
+    border-radius: 8px;
+    padding: 45px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.anime1 .serv-content1 .card1:hover{
+    background: rgb(206, 8, 48);
+}
+.anime1 .serv-content1 .card1 .box1{
+    transition: all 0.3s ease;
+    
+}
+.anime1 .serv-content1 .card1 img
+{
+  height: 300px;
+  width: 350px;
+  border-radius: 3%;
+  object-fit: cover;
+  align-content: center;
+  border: 3px solid rgb(252, 254, 255);
+  transition: all 0.1s ease;
+}
+.anime1 .serv-content1 .card1:hover .box1{
+    transform: scale(1.05);
+}
+.anime1 .serv-content1 .card1 i{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+.anime1 .serv-content1 .card1:hover i{
+    color: rgb(255, 255, 255);
+}
+.anime1 .serv-content1 .card1 .text{
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 3rem;
+
+
+}
+.anime1 .serv-content1
+{
+  background: rgb(255, 255, 255);
+  max-height: 40vh;
+  display: flex;
+
+}
+.anime1 .serv-content1 .card1
+{
+  width: 100%;
+  display: flex;
+
+}  
+/* anime1 section styling */
+.anime
+.anime1{
+    color:#fff;
+    background: #111;
+}
+.anime2 .title::before,
+.char .title::before{
+    background: rgb(73, 153, 190);
+}
+
+.anime2 .title::after
+{
+    background: rgb(231, 222, 222);
+}
+.char .title::after{
+    background: rgb(223, 217, 217);
+}
+.anime2 .serv-content2 .box2
+{
+  display: flex;
+  flex-direction: column;
+}
+.anime2 .serv-content2 .card2{
+    width: calc(29% - 20px);
+    text-align: center;
+    border-radius: 8px;
+    padding: 45px 2px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+.anime2 .serv-content2 .card2:hover{
+    background: rgb(194, 27, 61);
+}
+.anime2 .serv-content2 .card2 .box2{
+    transition: all 0.3s ease;
+    
+}
+.anime2 .serv-content2 .card2 img
+{
+  height: 300px;
+  width: 350px;
+  border-radius: 3%;
+  object-fit: cover;
+  align-content: center;
+  border: 3px solid rgb(252, 254, 255);
+  transition: all 0.1s ease;
+}
+.anime2 .serv-content2 .card2:hover .box2{
+    transform: scale(1.05);
+}
+.anime2 .serv-content2 .card2 i{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    transition: color 0.3s ease;
+}
+.anime2 .serv-content2 .card2:hover i{
+    color: rgb(255, 255, 255);
+}
+.anime2 .serv-content2 .card2 .text{
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 3rem;
+
+
+}
+.anime2 .serv-content2
+{
+  background: rgb(255, 255, 255);
+  max-height: 40vh;
+  display: flex;
+
+}
+.anime2 .serv-content2 .card2
+{
+
+  width: 100%;
+  display: flex;
+
+}  
